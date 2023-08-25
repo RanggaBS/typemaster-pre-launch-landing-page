@@ -1,0 +1,132 @@
+/* @font-face {
+	font-family: "Barlow";
+	src: url("../assets/fonts/Barlow/Barlow-Thin.ttf");
+	font-weight: 100;
+}
+@font-face {
+	font-family: "Barlow";
+	src: url("../assets/fonts/Barlow/Barlow-ExtraLight.ttf");
+	font-weight: 200;
+}
+@font-face {
+	font-family: "Barlow";
+	src: url("../assets/fonts/Barlow/Barlow-Light.ttf");
+	font-weight: 300;
+}
+@font-face {
+	font-family: "Barlow";
+	src: url("../assets/fonts/Barlow/Barlow-Regular.ttf");
+	font-weight: 400;
+} */
+@font-face {
+	font-family: "Barlow";
+	src: url("../assets/fonts/Barlow/Barlow-Medium.ttf");
+	font-weight: 500;
+}
+/* @font-face {
+	font-family: "Barlow";
+	src: url("../assets/fonts/Barlow/Barlow-SemiBold.ttf");
+	font-weight: 600;
+} */
+@font-face {
+	font-family: "Barlow";
+	src: url("../assets/fonts/Barlow/Barlow-Bold.ttf");
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Barlow";
+	src: url("../assets/fonts/Barlow/Barlow-ExtraBold.ttf");
+	font-weight: 800;
+}
+@font-face {
+	font-family: "Barlow";
+	src: url("../assets/fonts/Barlow/Barlow-Black.ttf");
+	font-weight: 900;
+}
+
+:root {
+	--layout-width-mobile: 375px;
+	--layout-width-tablet: 768px;
+	--layout-width-desktop: 1440px;
+
+	--color-white: #fff;
+	--color-orange: hsl(22, 88%, 52%);
+	--color-light-gray: hsl(196, 30%, 93%);
+	--color-dark-blue: hsl(220, 47%, 17%);
+	--color-gray: hsl(219, 18%, 57%);
+
+	--margin-x-mobile: 1.5rem;
+	--margin-x-tablet: 2rem;
+	--margin-x-desktop: 3rem;
+	--margin-x: var(--margin-x-mobile);
+
+	--content-max-width: 1110px;
+}
+
+.app {
+	font-family: "Barlow";
+	font-weight: 500;
+
+	color: var(--color-gray);
+}
+
+.app > * {
+	@apply max-w-[var(--content-max-width)] lg:mx-auto lg:w-[90%] !important;
+}
+
+.hero > * {
+	@apply mx-[var(--margin-x)];
+}
+
+.desc {
+	/* color: var(--color-gray); */
+}
+
+.title {
+	color: var(--color-dark-blue);
+	@apply font-extrabold leading-none uppercase;
+}
+
+.overview .pictures picture:first-child {
+	filter: brightness(40%) contrast(80%) sepia(94%) saturate(486%)
+		hue-rotate(340deg);
+}
+
+/* Button */
+.button {
+	/* @apply px-4 py-3 font-bold uppercase transition rounded-lg; */
+}
+.button--primary {
+	background-color: var(--color-orange);
+	color: var(--color-white);
+}
+.button--primary:hover {
+	background-color: hsl(22, 88%, 40%);
+}
+.button--secondary {
+	background-color: var(--color-light-gray);
+	color: var(--color-dark-blue);
+}
+.button--secondary:hover {
+	background-color: hsl(196, 30%, 80%);
+}
+
+.card img {
+	background-color: var(--color-orange);
+}
+
+@media screen and (min-width: 768px) {
+	:root {
+		--margin-x: var(--margin-x-tablet);
+	}
+
+	.hero > * {
+		@apply mx-0;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	:root {
+		--margin-x: var(--margin-x-desktop);
+	}
+}
