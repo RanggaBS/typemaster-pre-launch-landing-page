@@ -9,9 +9,9 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
-![Desktop design](./design/final/design-desktop.jpg)
-![Tablet design](./design/finaldesign-tablet.jpg)
-![Mobile design](./design/final/design-mobile.jpg)
+![Desktop design](./design/final/design-final-desktop.png)
+<!-- ![Tablet design](./design/final/design-final-tablet.png)
+![Mobile design](./design/final/design-final-mobile.png) -->
 
 ## Built with
 - Semantic HTML5 markup
